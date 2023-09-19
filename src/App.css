@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +14,61 @@
   color: white;
 }
 
-.App-link {
+.App-button{
+  display: flex;
+  flex-direction: row;
+  /* background-color: #282c34;
+  
+  border:none; */
   color: #61dafb;
+  margin-top: 40px;
+  .Button{
+    background-color: #282c34;
+    color: #61dafb;
+    border:none;
+  }
+}
+.App-button > * {
+  padding:20px;
+  font-size: 40px;
+  
+}
+ /* .bounce-on-hover:hover {
+  animation: bounce 1s infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  40% {
+    transform: translateY(10px);
   }
+  60% {
+    transform: translateY(5px);
+  }
+} */
+
+.rotate-on-hover {
+  transition: transform 0.3s ease; /* Smoothly transition the transform property */
+}
+
+.rotate-on-hover:hover {
+  transform: rotate(45deg); /* Adjust the angle as needed */
+}
+
+.rotate-on-hover-2 {
+  transition: transform 0.3s ease; /* Smoothly transition the transform property */
+}
+
+.rotate-on-hover-2:hover {
+  transform: rotate(-45deg); /* Adjust the angle as needed */
+}
+
+.slide-on-hover {
+  transition: transform 0.3s ease; /* Smoothly transition the transform property */
+}
+
+.slide-on-hover:hover {
+  transform: translateY(-35px); /* Adjust the distance as needed */
 }
